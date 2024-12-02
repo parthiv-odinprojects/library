@@ -13,7 +13,17 @@ function addbook(){
         pri
     }
     books.push(book);
-    console.log(books);
-    
+    document.getElementById("name").value = "";
+    document.getElementById("author").value = "";
+    document.getElementById("price").value = "";
+    displayBooks();
     event.preventDefault();
+}
+
+function displayBooks() {
+    let bookList = "";
+    books.forEach((book) => {
+        bookList += `<div>Book: ${book.title}, Author: ${book.auth}, Price: ${book.pri}</div>`;
+    });
+    main.innerHTML = bookList;
 }
