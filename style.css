@@ -65,13 +65,18 @@ form input[type="text"]:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: max-content;
     padding: 20px;
     border-radius:10px ;
-    margin: 260px;
-    border: 2px solid #2D93AD;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+.book-card {
+    border: 1px solid #2D93AD;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(240, 248, 255, 0.5);
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
 }
 

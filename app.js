@@ -23,7 +23,12 @@ function addbook(){
 function displayBooks() {
     let bookList = "";
     books.forEach((book) => {
-        bookList += `<div>Book: ${book.title}, Author: ${book.auth}, Price: ${book.pri}</div>`;
+        bookList += `
+        <div class="book-card">
+            <h3>${book.title}</h3>
+            <p>Author: ${book.auth}</p>
+            <p>Price: ${book.pri}</p>
+        </div>`;
     });
     main.innerHTML = bookList;
 }
